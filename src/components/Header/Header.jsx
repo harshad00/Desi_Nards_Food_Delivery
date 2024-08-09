@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../Logo";
 import Dropdown from "./Dropdown";
+import { useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "Why Fudo?", slug: "/", active: true },
@@ -30,8 +31,10 @@ const navItems = [
 
 function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const isLoginPage = location.pathname === "/login";
 
   const handleDropdownToggle = (index) => {
     setDropdownOpen(dropdownOpen === index ? null : index);
@@ -45,11 +48,18 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  // for login page 
+
+
+  
+  
+     
+
   return (
-    <nav className="bg-white shadow-lg px-3">
+    <nav className="bg-white  px-3">
       <div className="flex flex-col justify-between md:flex-row px-2 py-5">
         <Link to="/">
-          <Logo />
+          <Logo  size={"1.5rem"}/>
         </Link>
 
         <div className="md:hidden absolute right-0 top-5 pr-5">
@@ -137,7 +147,9 @@ function Header() {
           <i className="fa-solid fa-magnifying-glass"></i>
           <i className="fa-solid fa-bag-shopping"></i>
           
-          <button className="font-primary font-medium bg-[#EB5757] rounded-[14px] py-1 px-2  capitalize-semibold text-white "> <i className="fa-solid fa-arrow-right-to-bracket text-sm"> </i>  Login</button>
+     {!isLoginPage &&
+      <Link to={"/login"}>  <button className="font-primary font-medium bg-[#EB5757] rounded-[14px] py-1 px-2  capitalize-semibold text-white "> <i className="fa-solid fa-arrow-right-to-bracket text-sm"> </i>Login</button></Link> ||
+       <Link to={"/singup"}>  <button className="font-primary font-medium bg-[#74c670] rounded-[14px] py-1 px-2  capitalize-semibold text-white "> <i className="fa-solid fa-arrow-right-to-bracket text-sm"> </i>  Sing Up</button></Link>  }
         </div>
       </div>
     </nav>
