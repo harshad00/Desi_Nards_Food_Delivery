@@ -9,6 +9,7 @@ export const data=[
                 price:"",
                 id:''
             }
+            
         ]
     },
     {
