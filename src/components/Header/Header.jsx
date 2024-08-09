@@ -148,7 +148,7 @@ function Header() {
           <i className="fa-solid fa-bag-shopping"></i>
           
      {!isLoginPage &&
-      <Link to={"/login"}>  <button className="font-primary font-medium bg-[#EB5757] rounded-[14px] py-1 px-2  capitalize-semibold text-white "> <i className="fa-solid fa-arrow-right-to-bracket text-sm"> </i>Login</button></Link> ||
+      <Link to={"/login"}>  <button className="font-primary font-medium bg-[#EB5757] rounded-[14px] py-1 px-4  capitalize-semibold text-white "> <i className="fa-solid fa-arrow-right-to-bracket text-sm p-1"> </i>Login</button></Link> ||
        <Link to={"/singup"}>  <button className="font-primary font-medium bg-[#74c670] rounded-[14px] py-1 px-2  capitalize-semibold text-white "> <i className="fa-solid fa-arrow-right-to-bracket text-sm"> </i>  Sing Up</button></Link>  }
         </div>
       </div>

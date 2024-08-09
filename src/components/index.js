@@ -10,6 +10,7 @@
  import MenuComponent from "./Menu/MenuComponent";
 
 
+
  export{
        Header,
        Footer,
@@ -19,6 +20,7 @@
        InputBox,
        BottomWarning,
        DeliveryComponent,
-       MenuComponent
+       MenuComponent,
+      
 
   }

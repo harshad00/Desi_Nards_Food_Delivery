@@ -2,6 +2,8 @@
 import React from 'react';
 import HeroSection from './Hero';
 import { DeliveryComponent, MenuComponent } from '../components';
+import Delivery from './Delivery';
+import FoodDelivery from './FoodDelivery';
 
 function Home() {
   return (
@@ -18,6 +20,12 @@ function Home() {
    <section>
    <MenuComponent/>
    </section>
+   <section>
+   <Delivery />  
+    </section>
+   <section>
+   <FoodDelivery />
+      </section>
     </div>
     </div>
   );
