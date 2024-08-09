@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import HeroSection from './Hero';
+import { DeliveryComponent, MenuComponent } from '../components';
 
 function Home() {
   return (
@@ -10,6 +11,12 @@ function Home() {
    <div className='md:w-[80%]'>
    <section>
     <HeroSection/>
+   </section>
+   <section>
+   <DeliveryComponent/>
+   </section>
+   <section>
+   <MenuComponent/>
    </section>
     </div>
     </div>
