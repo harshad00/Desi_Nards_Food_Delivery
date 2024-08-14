@@ -10,8 +10,8 @@ function Home() {
     <div className='flex justify-center '>
       {/* <h1 className="font-heading text-3xl">This is a Heading</h1>
       <p className="font-primary text-base">This is some body text.</p> */}
-   <div className='md:w-[80%]'>
-   <section>
+   <div className='flex flex-col items-center'>
+   <section >
     <HeroSection/>
    </section>
    <section>

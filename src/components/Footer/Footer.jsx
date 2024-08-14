@@ -14,19 +14,19 @@ const TwitterIcon = () => (
 
 const Footer = () => {
   return (
-    <footer className="bg-white   p-4 md:p-8">
-      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-evenly space-y-4 md:space-y-0">
-        <div className="flex flex-col justify-center  items-center  md:flex-row md:space-x-12">
+    <footer className="bg-white px-10  ">
+      <div className="max-w-screen-xl mx-auto  flex-col lg:flex-row justify-evenly space-y-4 md:space-y-0">
+        <div className="flex flex-col justify-center  items-center  lg:flex-row md:space-x-12">
           <div className='flex flex-col items-center md:items-start'> 
              <Logo className='text-center' size={"3rem"} />
-            <p>Our job is to fill your tummy with delicious <br/> food and with fast and free delivery.</p>
+            <p className='text-center md:text-start' >Our job is to fill your tummy with delicious <br/> food and with fast and free delivery.</p>
             <div className="flex space-x-4 mt-2">
               <a href="#" className="hover:text-gray-200"><InstagramIcon /></a>
               <a href="#" className="hover:text-gray-200"><FacebookIcon /></a>
               <a href="#" className="hover:text-gray-200"><TwitterIcon /></a>
             </div>
           </div>
-          <div className="flex gap-2 md:flex-row md:space-x-12">
+          <div className="flex gap-2 flex-col  md:flex-row md:space-x-12">
             <div className=" flex flex-col space-y-2">
               <h5 className="font-bold">About</h5>
               <a href="#" className= "flex-nowraphover:text-gray-200">AboutUs</a>

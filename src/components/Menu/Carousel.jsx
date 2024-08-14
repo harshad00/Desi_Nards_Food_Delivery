@@ -48,7 +48,7 @@ const Carousel = () => {
             exit="exit"
             variants={variants}
             transition={{ duration: 0.6 }}
-          >
+          >          
             {data[1].items.slice(currentIndex, currentIndex + itemsToShow).map((item, index) => (
               <div key={index} className="flex flex-col items-center w-1/3">
                 <img src={item.img} className='h-80 w-72 object-cover' alt="" />

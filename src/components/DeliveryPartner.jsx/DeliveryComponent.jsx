@@ -27,7 +27,7 @@ const DeliveryComponent = () => {
         What We Serve
       </motion.h3>
       <motion.h1
-        className="lg:w-1/3 mx-auto font-bold text-5xl my-4"
+        className="lg:w-1/2 mx-auto font-bold  text-2xl lg:text-5xl my-4"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -35,7 +35,7 @@ const DeliveryComponent = () => {
       >
         Your Favorite Food Delivery Partner
       </motion.h1>
-      <div className="flex justify-between gap-5 px-20">
+      <div className="flex  flex-col lg:flex-row justify-between gap-5 px-20">
         {details.map((detail, i) => (
           <motion.div
             key={i}

@@ -47,14 +47,6 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-  // for login page 
-
-
-  
-  
-     
-
   return (
     <nav className="bg-white  px-3">
       <div className="flex flex-col justify-between md:flex-row px-2 py-5">
